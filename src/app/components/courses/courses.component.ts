@@ -14,7 +14,7 @@ import { ErrorDialogComponent } from 'src/app/components/error-dialog/error-dial
 export class CoursesComponent implements OnInit {
 
   courses$: Observable<Course[]>;
-  displayedColumns = ['name','category'];
+  displayedColumns = ['_id','name','category'];
 
   constructor(
       private coursesService: CoursesService,
