@@ -2,12 +2,8 @@ import { NgModule } from '@angular/core';
 import { CategoryPipe } from '../pipes/category.pipe';
 
 @NgModule({
-  declarations: [
-    CategoryPipe
-  ],
+  declarations: [CategoryPipe],
   imports: [],
-  exports: [
-    CategoryPipe
-  ]
+  exports: [CategoryPipe]
 })
 export class SharedModule { }
