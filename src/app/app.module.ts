@@ -8,6 +8,7 @@ import { ErrorDialogComponent } from './components/error-dialog/error-dialog.com
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppMaterialModule } from './modules/material.module';
 import { CourseFormComponent } from './components/course-form/course-form.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { CourseFormComponent } from './components/course-form/course-form.compon
     AppRoutingModule,
     BrowserAnimationsModule,
     HttpClientModule,
-    AppMaterialModule
+    AppMaterialModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

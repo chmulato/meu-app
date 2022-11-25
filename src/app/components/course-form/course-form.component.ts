@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { NonNullableFormBuilder, Validators } from '@angular/forms';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-course-form',
@@ -8,22 +8,20 @@ import { NonNullableFormBuilder, Validators } from '@angular/forms';
 })
 export class CourseFormComponent implements OnInit {
 
-  form = this.formBuilder.group({
-    _id: [''],
-    name: ['', [Validators.required,
-    Validators.minLength(5),
-    Validators.maxLength(100)]],
-    category: ['', [Validators.required]]
-  });
+  form: FormGroup;
 
-  constructor(private formBuilder: NonNullableFormBuilder,) { 
+  constructor(private formBuilder: FormBuilder) { 
+    this.form = this.formBuilder.group({
+      name: [null],
+      category: [null]
+    });
   }
 
   ngOnInit(): void {
   }
 
   onSubmit() {
-    console.log('onSubmit');
+    console.log(this.form.value);
   }
 
   onCancel() {
