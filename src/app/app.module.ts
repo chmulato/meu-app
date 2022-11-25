@@ -7,11 +7,13 @@ import { AppComponent } from './app.component';
 import { ErrorDialogComponent } from './components/error-dialog/error-dialog.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppMaterialModule } from './modules/material.module';
+import { CourseFormComponent } from './components/course-form/course-form.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ErrorDialogComponent,
+    CourseFormComponent,
   ],
   imports: [
     BrowserModule,
