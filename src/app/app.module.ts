@@ -6,6 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AppMaterialModule } from './modules/material.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ConfirmationDialogComponent } from './components/confirmation-dialog/confirmation-dialog.component';
 import { CourseFormComponent } from './components/course-form/course-form.component';
 import { ErrorDialogComponent } from './components/error-dialog/error-dialog.component';
 import { ReactiveFormsModule } from '@angular/forms';
@@ -15,6 +16,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     AppComponent,
     ErrorDialogComponent,
     CourseFormComponent,
+    ConfirmationDialogComponent,
   ],
   imports: [
     BrowserModule,
